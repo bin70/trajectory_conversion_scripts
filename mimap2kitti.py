@@ -60,8 +60,9 @@ for line in open(args.input_file, "r"):
         id = int(line.split(' ')[1])
         if id > args.end_line:
             break
-        cnt2 = cnt2 + 1
+        
         if id >= args.begin_line:
+            cnt2 = cnt2 + 1
             T = get_transform(line)
             new_line = np.reshape(T, [1, 12])
             with open(output_file, "a") as out_file:
