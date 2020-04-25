@@ -40,7 +40,7 @@ def get_transform(line):
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--input_file", type=str, default='./traj_with_timestamp.txt', help="轨迹文件路径")
 parser.add_argument("-o", "--output_path", type=str, default='.', help="转换结果保存路径")
-parser.add_argument("-k", "--skip_lines", type=int, default=0, help="需跳过的文件头行数")
+parser.add_argument("-k", "--skip_lines", type=int, default=3, help="需跳过的文件头行数")
 parser.add_argument("-b", "--begin_line", type=int, default=0, help="开始转换的行数")
 parser.add_argument("-e", "--end_line", type=int, default=3, help="结束转换的行数")
 parser.add_argument("-g", "--mapping_gap", type=int, default=2, help="建图时的位姿间隔")
